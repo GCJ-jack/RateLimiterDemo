@@ -56,6 +56,19 @@
       <version>3.16.3</version> <!-- 请根据需要选择合适的版本 -->
     </dependency>
 
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>3.6.0</version> <!-- 请根据需要选择版本 -->
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.22</version> <!-- 请使用最新的版本 -->
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
