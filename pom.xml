@@ -31,45 +31,48 @@
   </dependencyManagement>
 
   <dependencies>
-    <!-- Spring Boot Starter Web (如果你要做 Web 项目) -->
+    <!-- Spring Boot Web Starter for REST API -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
-    <!-- Spring Boot Starter Data Redis (支持 Redis 操作) -->
+    <!-- Spring Boot Redis Starter -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-redis</artifactId>
     </dependency>
 
-    <!-- Spring Boot Starter Test (用于单元测试) -->
+    <!-- Spring Boot Test Starter for unit testing -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
 
+    <!-- Redisson (optional, for advanced Redis usage) -->
     <dependency>
       <groupId>org.redisson</groupId>
       <artifactId>redisson</artifactId>
-      <version>3.16.3</version> <!-- 请根据需要选择合适的版本 -->
+      <version>3.16.3</version>
     </dependency>
 
-    <dependency>
-      <groupId>redis.clients</groupId>
-      <artifactId>jedis</artifactId>
-      <version>3.6.0</version> <!-- 请根据需要选择版本 -->
-    </dependency>
-
+    <!-- Lombok for reducing boilerplate code -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version> <!-- 请使用最新的版本 -->
+      <version>1.18.22</version> <!-- Use the latest version -->
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.3.9</version> <!-- 请确保版本与 Spring Boot 版本兼容 -->
+    </dependency>
+
   </dependencies>
+
 
   <build>
     <plugins>

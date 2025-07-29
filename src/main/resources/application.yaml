@@ -4,6 +4,11 @@ spring:
     port: 6379
     password:
 
+
+  db:
+    host: localhost       # 保留配置，暂时不使用
+    pw:
+
 server:
   port: 8080
 

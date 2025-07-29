@@ -1,4 +1,4 @@
-package config;
+package com.itheima.ratelimitdemo.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.Redisson;
