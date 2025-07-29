@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import javax.xml.transform.Source;
+
 @SpringBootTest(classes = Main.class)// 指定主配置类
 public class RedisTest {
 
@@ -14,6 +16,8 @@ public class RedisTest {
     @Test
     void testSpring(){
         redisTemplate.opsForValue().set("name","chaojun");
+
+        System.out.println(redisTemplate.opsForValue().get("name"));
     }
 
 }
