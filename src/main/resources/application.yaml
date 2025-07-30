@@ -20,3 +20,5 @@ ratelimit:
   capacity: 5           # 桶容量
   refillTokens: 1      # 每次补充令牌数
   refillIntervalMillis: 1000  # 补充间隔（毫秒）
+  windowMillis: 60000   # 窗口长度：1 分钟
+  limit: 100           # 每个窗口允许 100 次请求
