@@ -1,6 +1,12 @@
 package com.itheima.ratelimitdemo.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+
 public interface RateLimiterService {
+
+
 
     /*
      * 试图获取一个令牌

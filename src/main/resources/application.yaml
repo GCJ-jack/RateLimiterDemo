@@ -15,3 +15,8 @@ server:
 logging:
   level:
     org.springframework: INFO
+
+ratelimit:
+  capacity: 5           # 桶容量
+  refillTokens: 1      # 每次补充令牌数
+  refillIntervalMillis: 1000  # 补充间隔（毫秒）
